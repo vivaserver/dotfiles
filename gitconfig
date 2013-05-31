@@ -1,0 +1,20 @@
+[alias]
+  br = branch
+  ci = commit
+  co = checkout
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+  sh = stash
+  st = status
+  sub = submodule
+[user]
+	name = Cristian R. Arroyo
+	email = cristian.arroyo@vivaserver.com.ar
+[push]
+  default = current
+[giggle]
+	main-window-maximized = false
+	main-window-geometry = 1003x769+349+57
+	file-view-vpane-position = 731
+	file-view-hpane-position = 233
+	history-view-vpane-position = 291
+	main-window-view = HistoryView
