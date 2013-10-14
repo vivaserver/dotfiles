@@ -5,19 +5,30 @@
 # this file and re-run i3-config-wizard(1).
 #
 
-new_window 1pixel
+new_window none
 new_float 1pixel
+hide_edge_borders both
 
 exec dropbox start
 exec gnome-settings-daemon
+exec feh --bg-tile ~/Dropbox/Photos/walls/desktop_solarized.png
 # apt-get install kupfer
 # exec kupfer
 
-for_window [class="Skype"] floating enable
+for_window [class="feh"] floating enable
+for_window [class="Firefox" instance="^Download"] floating enable
+for_window [class="^GIMP"] floating enable
+for_window [class="MPlayer"] floating enable
 for_window [class="Remmina"] floating enable
+for_window [class="Skype"] floating enable
+for_window [class="(Steam|hl_linux)"] floating enable
 
-# bindsym $mod+Shift+T exec terminology
-bindsym $mod+Shift+T exec lxterminal
+# colors                 border background text indicator
+client.focused           #073642 #073642 #eee8d5 #90A959
+client.focused_inactive  #586e75 #002b36 #586e75 #303030
+client.unfocused         #002b36 #002b36 #586e75 #303030
+client.urgent            #C86F70 #fdf6e3 #eee8d5
+client.background #002b36 
 
 # workspace "[1]" output CRT1
 # workspace "[2]" output CRT1
@@ -32,17 +43,25 @@ bindsym $mod+Shift+T exec lxterminal
 
 set $mod Mod4
 
+# see full charset using `xfd -fa terminus`
+# get font strings using `xfontsel`
 # font for window titles. ISO 10646 = Unicode
 # font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
-font -*-terminus-medium-r-*-*-*-120-75-75-*-*-iso8859-15
+font pango:Terminus 8px
+# font -*-terminus-medium-r-*-*-*-120-75-75-*-*-iso8859-15
 # font -*-ohsnap-medium-*-*-*-12-*-*-*-*-*-*-*
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+#  lxterminal Background color #00141A
+bindsym $mod+Return exec lxterminal
 # bindsym $mod+Return exec terminology
+bindsym $mod+Shift+T exec i3-sensible-terminal
+bindsym $mod+Shift+F exec firefox
+bindsym $mod+Shift+S exec surf https://www.duckduckgo.com
+bindsym $mod+Shift+I exec google-chrome --incognito
 
 # kill focused window
 bindsym $mod+Shift+Q kill
@@ -62,6 +81,12 @@ bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
+# scroll through workspaces
+bindsym Control+$mod+Right workspace next_on_output
+bindsym Control+$mod+L workspace next_on_output
+bindsym Control+$mod+Left workspace prev_on_output
+bindsym Control+$mod+H workspace prev_on_output
+
 # move focused window
 bindsym $mod+Shift+H move left
 bindsym $mod+Shift+J move down
@@ -74,10 +99,9 @@ bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
-# split in horizontal orientation
+# split in horiZontal orientation
 bindsym $mod+z split h
-
-# split in vertical orientation
+# split in Vertical orientation
 bindsym $mod+v split v
 
 # enter fullscreen mode for the focused container
@@ -101,28 +125,28 @@ bindsym $mod+a focus parent
 #bindcode $mod+d focus child
 
 # switch to workspace
-bindsym $mod+1 workspace 1
-bindsym $mod+2 workspace 2
-bindsym $mod+3 workspace 3
-bindsym $mod+4 workspace 4
-bindsym $mod+5 workspace 5
-bindsym $mod+6 workspace 6
-bindsym $mod+7 workspace 7
-bindsym $mod+8 workspace 8
+bindsym $mod+1 workspace ⠁
+bindsym $mod+2 workspace ⠉
+bindsym $mod+3 workspace ⠋
+bindsym $mod+4 workspace ⠛
+bindsym $mod+5 workspace ⠟
+bindsym $mod+6 workspace ⠿
+bindsym $mod+7 workspace ⡿
+bindsym $mod+8 workspace ⣿
 bindsym $mod+9 workspace 9
-bindsym $mod+0 workspace 10
+bindsym $mod+0 workspace 0
 
 # move focused container to workspace
-bindsym $mod+Shift+exclam move container to workspace 1
-bindsym $mod+Shift+quotedbl move container to workspace 2
-bindsym $mod+Shift+periodcentered move container to workspace 3
-bindsym $mod+Shift+dollar move container to workspace 4
-bindsym $mod+Shift+percent move container to workspace 5
-bindsym $mod+Shift+ampersand move container to workspace 6
-bindsym $mod+Shift+slash move container to workspace 7
-bindsym $mod+Shift+parenleft move container to workspace 8
+bindsym $mod+Shift+exclam move container to workspace ⠁
+bindsym $mod+Shift+quotedbl move container to workspace ⠉
+bindsym $mod+Shift+periodcentered move container to workspace ⠋
+bindsym $mod+Shift+dollar move container to workspace ⠛
+bindsym $mod+Shift+percent move container to workspace ⠟
+bindsym $mod+Shift+ampersand move container to workspace ⠿
+bindsym $mod+Shift+slash move container to workspace ⡿
+bindsym $mod+Shift+parenleft move container to workspace ⣿
 bindsym $mod+Shift+parenright move container to workspace 9
-bindsym $mod+Shift+equal move container to workspace 10
+bindsym $mod+Shift+equal move container to workspace 0
 
 # reload the configuration file
 bindsym $mod+Shift+C reload
@@ -161,10 +185,21 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         # apt-get install xfonts-terminus
-        font -*-terminus-medium-r-*-*-*-120-75-75-*-*-iso8859-15
+        # font -*-terminus-medium-r-*-*-*-120-75-75-*-*-iso8859-15
+        font pango:Terminus 8px
         # http://askubuntu.com/questions/135437/install-artwiz-fonts-in-ubuntu-12-04
         # font -*-ohsnap-medium-*-*-*-12-*-*-*-*-*-*-*
         status_command i3status
         position top
         # mode hide
+        colors {
+          background #002b36
+          statusline #586e75
+          separator #073642
+          #                  border background text
+          focused_workspace  #fdf6e3 #eee8d5 #586e75
+          active_workspace   #586e75 #073642 #586e75
+          inactive_workspace #073642 #073642 #586e75
+          urgent_workspace   #fdf6e3 #073642 #586e75
+        }
 }
