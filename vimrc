@@ -1,4 +1,3 @@
-
 set nocompatible
 
 filetype off
@@ -20,15 +19,16 @@ Bundle 'kolor'
 Bundle 'MatchTag'
 Bundle 'The-NERD-tree'
 Bundle 'underwater-mod'
-Bundle 'Xoria256m'
 " original repos on github
-Bundle 'DAddYE/soda.vim'
+Bundle 'bling/vim-bufferline'
+Bundle 'junegunn/seoul256.vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'lunaru/vim-less'
 Bundle 'michalbachowski/vim-wombat256mod'
 Bundle 'scrooloose/syntastic'
 Bundle 'slim-template/vim-slim'
+Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-haml'
 Bundle 'vivaserver/Mustang2'
 Bundle 'vim-ruby/vim-ruby'
@@ -78,6 +78,7 @@ set whichwrap+=<,>,h,l
 " code folding, unfinished
 set foldmethod=indent
 set nofoldenable
+set foldlevel=1
 
 " remove empty lines at end of file
 " %s/\($\n\s*\)\+\%$//e
@@ -94,6 +95,7 @@ command Wq wq
 command W w
 command Q q
 command Qa qa
+command B b
 command Bd bd
 
 " PHP parser check (CTRL-L)
@@ -148,6 +150,14 @@ else
   set background=dark
   color hemisu
 endif
+
+" alternate relativenumber mode
+autocmd FocusLost * :set number
+autocmd FocusGained * :set relativenumber
+autocmd InsertEnter * :set number
+autocmd InsertLeave * :set relativenumber
+autocmd BufReadPost * :set relativenumber
+autocmd BufNewFile * :set relativenumber
 
 au BufRead,BufNewFile *.ru setfiletype ruby
 au BufRead,BufNewFile *.scss set filetype=scss
