@@ -11,7 +11,7 @@ hide_edge_borders both
 
 exec dropbox start
 exec gnome-settings-daemon
-exec feh --bg-tile ~/Dropbox/Photos/walls/desktop_solarized.png
+exec feh --bg-tile ~/.i3/desktop_solarized.png
 # apt-get install kupfer
 # exec kupfer
 
