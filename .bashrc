@@ -113,14 +113,28 @@ if ! shopt -oq posix; then
   fi
 fi
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+# choose RVM **or** RBENV promt support
+#
+# [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+# PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+# # https://gist.github.com/4376766
+# export PS1="\$(__git_ps1 \"%s ± \")\$(~/.rvm/bin/rvm-prompt) \w
+#  ⚡ "
+#
+# https://gist.github.com/kyanny/1668822
+# export PATH="$HOME/.rbenv/bin:$PATH"
+# eval "$(rbenv init -)"
+# source ~/.rbenv/completions/rbenv.bash
+# __rbenv_ps1 ()
+# {
+#   rbenv_ruby_version=`rbenv version | sed -e 's/ .*//'`
+#   printf $rbenv_ruby_version
+# }
+# export PS1="\$(__git_ps1 \"%s ± \")\$(__rbenv_ps1) \w
+#  ⚡ "
 
-# https://gist.github.com/4376766
-# export PS1="\$(__git_ps1 \"± %s 〉\")\$(~/.rvm/bin/rvm-prompt) 〉\w
-export PS1="\$(__git_ps1 \"%s ± \")\$(~/.rvm/bin/rvm-prompt) \w
- ⚡ "
+
 export EDITOR=/usr/bin/vim
 
 # using 'tmux -2', so this not needed:
