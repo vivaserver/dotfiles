@@ -92,6 +92,8 @@ set hlsearch
 " Some fixes for common typos have saved me a surprising amount of time
 command WQ wq
 command Wq wq
+command WA wa
+command Wa wa
 command W w
 command Q q
 command Qa qa
