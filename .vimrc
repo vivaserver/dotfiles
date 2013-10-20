@@ -150,7 +150,6 @@ if has("gui_running")
 else
   set t_Co=256
   set background=dark
-  color hemisu
 endif
 
 " alternate relativenumber mode
@@ -160,6 +159,10 @@ autocmd InsertEnter * :set number
 autocmd InsertLeave * :set relativenumber
 autocmd BufReadPost * :set relativenumber
 autocmd BufNewFile * :set relativenumber
+
+" Per-directory .vimrc files
+set exrc
+set secure
 
 au BufRead,BufNewFile *.ru setfiletype ruby
 au BufRead,BufNewFile *.scss set filetype=scss
