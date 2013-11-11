@@ -133,7 +133,8 @@ fi
 # }
 # export PS1="\$(__git_ps1 \"%s ± \")\$(__rbenv_ps1) \w
 #  ⚡ "
-export PS1=" \h ⚡ "
+export PS1="\w
+ ⚡ "
 
 
 export EDITOR=/usr/bin/vim
