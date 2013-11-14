@@ -123,11 +123,11 @@ nmap <Leader>t :tabnew<CR>
 " awesome statusbar mod Powerline
 " http://github.com/Lokaltog/vim-powerline/
 set laststatus=2 " Always show the statusline
-" let g:Powerline_symbols='unicode'
+let g:Powerline_symbols='unicode'
 "
 " patched font thanks to https://gist.github.com/toupeira/1630581
-set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
-let Powerline_symbols = 'fancy'
+" set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
+" let Powerline_symbols = 'fancy'
 
 
 if has("gui_running")
