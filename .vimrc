@@ -105,13 +105,16 @@ autocmd FileType php noremap <C-L> <Esc>:w!<CR>:!php -l %<CR>
 " run file with PHP CLI (CTRL-M)
 autocmd FileType php noremap <C-M> <Esc>:w!<CR>:!php %<CR>
 
+" Leader key is '\' by default, but ',' is easier to type
+let mapleader=","
 " bind NERDTreeToggle to F2
 map <F2> <Esc>:NERDTreeToggle<CR>
 " make spacebar insert a single character
 nmap <Space> i <Esc>r
 " Ctrl-P’s file search combined with buffer search is magnificent
 " http://statico.github.com/vim.html
-nmap \ :CtrlPBuffer<CR>
+nmap <Leader>b :CtrlPBuffer<CR>
+nmap <Leader>t :tabnew<CR>
 " Press i to enter insert mode, and ii to exit
 " (http://vim.wikia.com/wiki/Avoid_the_escape_key)
 :imap ii <Esc>
@@ -135,7 +138,6 @@ if has("gui_running")
   set mouse=a
   map <S-Insert> <MiddleMouse>
   nmap gx <Plug>NetrwBrowseX
-  nnoremap <silent> <Plug>NetrwBrowseX :call netrw#NetrwBrowseX(expand("<cWORD>"),0)
 
   if has('mac') || has('macunix')
     color solarized
