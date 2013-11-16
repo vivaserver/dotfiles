@@ -114,7 +114,7 @@ nmap <Space> i <Esc>r
 " Ctrl-P’s file search combined with buffer search is magnificent
 " http://statico.github.com/vim.html
 nmap <Leader>b :CtrlPBuffer<CR>
-nmap <Leader>t :tabnew<CR>
+nmap <C-W>t <Esc>:tabnew<CR>
 " Press i to enter insert mode, and ii to exit
 " (http://vim.wikia.com/wiki/Avoid_the_escape_key)
 :imap ii <Esc>
