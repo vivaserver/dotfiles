@@ -120,6 +120,7 @@ nmap <C-W>t <Esc>:tabnew<CR>
 " (http://vim.wikia.com/wiki/Avoid_the_escape_key)
 :imap ii <Esc>
 
+let g:ctrlp_custom_ignore = 'vendor/ruby'
 
 " awesome statusbar mod Powerline
 " http://github.com/Lokaltog/vim-powerline/
