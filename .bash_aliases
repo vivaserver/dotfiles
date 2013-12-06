@@ -9,6 +9,7 @@ alias tmux="tmux -2"
 alias youtube-mp3="youtube-dl -t --extract-audio --audio-format mp3 --audio-quality 128k"
 alias rails="bundle exec rails"
 alias rake="bundle exec rake"
+alias rspec="bundle exec rspec"
 
 # syntax: search $what $where
 search_on() {
