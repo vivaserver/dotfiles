@@ -1,39 +1,8 @@
 set nocompatible
 
 filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-" let Vundle manage Vundle
-Bundle 'gmarik/vundle'
-" vim-scripts repos
-Bundle 'Auto-Pairs'
-Bundle 'Distinguished'
-Bundle 'endwise.vim'
-Bundle 'hemisu.vim'
-Bundle 'hickop'
-Bundle 'holokai'
-Bundle 'Lucius'
-Bundle 'jellybeans.vim'
-Bundle 'jQuery'
-Bundle 'kolor'
-Bundle 'MatchTag'
-Bundle 'The-NERD-tree'
-Bundle 'underwater-mod'
-" original repos on github
-Bundle 'bling/vim-bufferline'
-Bundle 'wolf-dog/sceaduhelm.vim'
-Bundle 'wolf-dog/nighted.vim'
-Bundle 'kien/ctrlp.vim'
-Bundle 'Lokaltog/vim-powerline'
-Bundle 'lunaru/vim-less'
-Bundle 'michalbachowski/vim-wombat256mod'
-Bundle 'scrooloose/syntastic'
-Bundle 'slim-template/vim-slim'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-haml'
-Bundle 'vivaserver/Mustang2'
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'w0ng/vim-hybrid'
+
+source ~/.vimrc_vundle
 
 filetype plugin indent on
 
@@ -108,29 +77,12 @@ autocmd FileType php noremap <C-M> <Esc>:w!<CR>:!php %<CR>
 
 " Leader key is '\' by default, but ',' is easier to type
 let mapleader=","
-" bind NERDTreeToggle to F2
-map <F2> <Esc>:NERDTreeToggle<CR>
 " make spacebar insert a single character
 nmap <Space> i <Esc>r
-" Ctrl-P’s file search combined with buffer search is magnificent
-" http://statico.github.com/vim.html
-nmap <Leader>b :CtrlPBuffer<CR>
 nmap <C-W>t <Esc>:tabnew<CR>
 " Press i to enter insert mode, and ii to exit
 " (http://vim.wikia.com/wiki/Avoid_the_escape_key)
 :imap ii <Esc>
-
-let g:ctrlp_custom_ignore = 'vendor/ruby'
-
-" awesome statusbar mod Powerline
-" http://github.com/Lokaltog/vim-powerline/
-set laststatus=2 " Always show the statusline
-let g:Powerline_symbols='unicode'
-"
-" patched font thanks to https://gist.github.com/toupeira/1630581
-" set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
-" let Powerline_symbols = 'fancy'
-
 
 if has("gui_running")
   set columns=195
