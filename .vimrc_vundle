@@ -20,7 +20,6 @@ Bundle 'The-NERD-tree'
 Bundle 'underwater-mod'
 " original repos on github
 Bundle 'bling/vim-bufferline'
-Bundle 'wolf-dog/sceaduhelm.vim'
 Bundle 'wolf-dog/nighted.vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'Lokaltog/vim-powerline'
@@ -33,6 +32,7 @@ Bundle 'tpope/vim-haml'
 Bundle 'vivaserver/Mustang2'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'w0ng/vim-hybrid'
+Bundle 'edkolev/tmuxline.vim'
 
 " bind NERDTreeToggle to F2
 map <F2> <Esc>:NERDTreeToggle<CR>
@@ -45,8 +45,11 @@ nmap <Leader>b :CtrlPBuffer<CR>
 " awesome statusbar mod Powerline
 " http://github.com/Lokaltog/vim-powerline/
 set laststatus=2 " Always show the statusline
-let g:Powerline_symbols='unicode'
+" let g:Powerline_symbols='unicode'
+let g:Powerline_symbols='compatible'
 "
 " patched font thanks to https://gist.github.com/toupeira/1630581
 " set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
 " let Powerline_symbols = 'fancy'
+
+let g:tmuxline_powerline_separators = 0
