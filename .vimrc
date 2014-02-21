@@ -106,6 +106,9 @@ if has("gui_running")
 else
   set t_Co=256
   set background=dark
+  " disable Background Color Erase (BCE) to fix Vim background on 256-color Tmux
+  " ref: http://snk.tuxfamily.org/log/vim-256color-bce.html
+  set t_ut=
 endif
 
 " alternate relativenumber mode
