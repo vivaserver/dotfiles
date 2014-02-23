@@ -114,7 +114,7 @@ if ! shopt -oq posix; then
 fi
 
 
-# choose RVM **or** RBENV promt support
+# choose RVM **or** RBENV prompt support
 #
 # [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 # PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
@@ -133,14 +133,18 @@ fi
 # }
 # export PS1="\$(__git_ps1 \"%s ± \")\$(__rbenv_ps1) \w
 #  ⚡ "
+
+# neither RVM **nor** RBENV support, but keep Git in prompt
+# export PS1="\$(__git_ps1 \"%s ± \")\w
+#  \h ⚡ "
+
 export PS1="\w
  \h ⚡ "
 
-
 export EDITOR=/usr/bin/vim
 
-# using 'tmux -2', so this not needed:
-# export TERM="xterm-256color"
+# no need for 'tmux -2' anymore, 'cause .vimrc BCE fix
+export TERM="xterm-256color"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
