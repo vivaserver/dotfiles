@@ -125,7 +125,9 @@ bindsym $mod+a focus parent
 #bindcode $mod+d focus child
 
 # switch to workspace
-bindsym $mod+1 workspace ⠁
+# use the Icons.ttf ref: https://wiki.archlinux.org/index.php/I3#Iconic_fonts_in_the_status_bar
+bindsym $mod+1 workspace 
+# bindsym $mod+1 workspace ⠁
 bindsym $mod+2 workspace ⠉
 bindsym $mod+3 workspace ⠋
 bindsym $mod+4 workspace ⠛
