@@ -142,6 +142,7 @@ export PS1="\w
  \h ⚡ "
 
 export EDITOR=/usr/bin/vim
+export XZ_OPT=-9
 
 # no need for 'tmux -2' anymore, 'cause .vimrc BCE fix
 export TERM="xterm-256color"
