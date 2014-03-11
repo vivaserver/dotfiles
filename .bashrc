@@ -141,6 +141,8 @@ fi
 export PS1="\w
  \h ⚡ "
 
+# ref. http://fabiorehm.com/blog/2013/11/12/set-the-default-vagrant-provider-from-your-vagrantfile/
+export VAGRANT_DEFAULT_PROVIDER=lxc
 export EDITOR=/usr/bin/vim
 export XZ_OPT=-9
 
