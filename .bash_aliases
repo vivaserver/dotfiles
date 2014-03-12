@@ -15,6 +15,8 @@ alias youtube-mp3="youtube-dl -t --extract-audio --audio-format mp3 --audio-qual
 alias youtube-480p="youtube-dl -f 18"
 alias youtube-720p="youtube-dl -f 22"
 
+alias matrix="cmatrix -xbu9"
+
 alias rails="bundle exec rails"
 alias rake="bundle exec rake"
 alias rackup="bundle exec rackup"
