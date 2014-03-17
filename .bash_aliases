@@ -14,6 +14,7 @@ alias annex="git annex"
 alias youtube-mp3="youtube-dl -t --extract-audio --audio-format mp3 --audio-quality 128k"
 alias youtube-480p="youtube-dl -f 18"
 alias youtube-720p="youtube-dl -f 22"
+alias youtube-1080p="youtube-dl -f 37"
 
 alias matrix="cmatrix -xbu9"
 
