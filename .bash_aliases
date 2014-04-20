@@ -17,6 +17,8 @@ alias youtube-720p="youtube-dl -f 22"
 alias youtube-1080p="youtube-dl -f 37"
 
 alias matrix="cmatrix -xbu9"
+# ref. http://thoughtsbyclayg.blogspot.com.ar/2008/06/use-nmap-to-scan-for-ssh-servers-on.html
+alias ssh_search="nmap -p 22 --open -sV 192.168.0.0/24"
 
 alias rails="bundle exec rails"
 alias rake="bundle exec rake"
