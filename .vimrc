@@ -68,6 +68,7 @@ command Wa wa
 command W w
 command Q q
 command Qa qa
+command QA qa
 command B b
 command Bd bd
 
