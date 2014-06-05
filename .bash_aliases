@@ -12,6 +12,8 @@ alias annex="git annex"
 # alias tmux="tmux -2"
 
 alias youtube-mp3="youtube-dl -t --extract-audio --audio-format mp3 --audio-quality 128k"
+alias youtube-240p="youtube-dl -f 5"
+alias youtube-360p="youtube-dl -f 34"
 alias youtube-480p="youtube-dl -f 18"
 alias youtube-720p="youtube-dl -f 22"
 alias youtube-1080p="youtube-dl -f 37"
