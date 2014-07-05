@@ -22,6 +22,7 @@ for_window [class="MPlayer"] floating enable
 for_window [class="Remmina"] floating enable
 for_window [class="Skype"] floating enable
 for_window [class="(Steam|hl_linux)"] floating enable
+for_window [class="Update"] floating enable
 
 # colors                 border background text indicator
 client.focused           #073642 #073642 #eee8d5 #90A959
