@@ -140,7 +140,8 @@ bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 0
 
 # move focused container to workspace
-bindsym $mod+Shift+exclam move container to workspace ⠁
+bindsym $mod+Shift+exclam move container to workspace 
+# bindsym $mod+Shift+exclam move container to workspace ⠁
 bindsym $mod+Shift+quotedbl move container to workspace ⠉
 bindsym $mod+Shift+periodcentered move container to workspace ⠋
 bindsym $mod+Shift+dollar move container to workspace ⠛
