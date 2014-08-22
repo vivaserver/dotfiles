@@ -20,6 +20,7 @@ Bundle 'MatchTag'
 Bundle 'The-NERD-tree'
 Bundle 'underwater-mod'
 " original repos on github
+Bundle 'baskerville/bubblegum'
 Bundle 'bling/vim-bufferline'
 Bundle 'wolf-dog/nighted.vim'
 Bundle 'kien/ctrlp.vim'
