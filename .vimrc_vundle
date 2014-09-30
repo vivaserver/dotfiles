@@ -38,6 +38,8 @@ Bundle 'edkolev/tmuxline.vim'
 " bind NERDTreeToggle to F2
 map <F2> <Esc>:NERDTreeToggle<CR>
 
+" Excluding version control directories
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
 let g:ctrlp_custom_ignore = 'vendor/ruby'
 " Ctrl-P’s file search combined with buffer search is magnificent
 " http://statico.github.com/vim.html
