@@ -67,6 +67,7 @@ command WA wa
 command Wa wa
 command W w
 command Q q
+command aQ qa
 command Qa qa
 command QA qa
 command B b
@@ -125,6 +126,9 @@ autocmd BufNewFile * :set relativenumber
 " Per-directory .vimrc files
 set exrc
 set secure
+
+" NerdTree-like filelist style for netrw
+let g:netrw_liststyle=3
 
 au BufRead,BufNewFile *.ru setfiletype ruby
 au BufRead,BufNewFile *.scss set filetype=scss
