@@ -11,3 +11,5 @@
 	email = cristian.arroyo@vivaserver.com
 [push]
   default = current
+[color]
+	ui = true
