@@ -36,8 +36,8 @@ Bundle 'vim-ruby/vim-ruby'
 Bundle 'w0ng/vim-hybrid'
 Bundle 'edkolev/tmuxline.vim'
 
-" bind NERDTreeToggle to F2
-map <F2> <Esc>:NERDTreeToggle<CR>
+" bind NERDTreeToggle to Ctrl-n
+map <silent> <C-n> :NERDTreeToggle<CR>
 
 " Excluding version control directories
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
