@@ -18,6 +18,8 @@ Bundle 'jQuery'
 Bundle 'kolor'
 Bundle 'MatchTag'
 Bundle 'The-NERD-tree'
+Bundle 'RelativeNumberCurrentWindow'
+Bundle 'CursorLineCurrentWindow'
 Bundle 'underwater-mod'
 " original repos on github
 Bundle 'baskerville/bubblegum'
