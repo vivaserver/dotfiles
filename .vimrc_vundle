@@ -22,21 +22,23 @@ Bundle 'RelativeNumberCurrentWindow'
 Bundle 'CursorLineCurrentWindow'
 Bundle 'underwater-mod'
 " original repos on github
-Bundle 'baskerville/bubblegum'
 Bundle 'bling/vim-bufferline'
-Bundle 'wolf-dog/nighted.vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'lunaru/vim-less'
-Bundle 'romainl/Apprentice'
 Bundle 'scrooloose/syntastic'
 Bundle 'slim-template/vim-slim'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-haml'
-Bundle 'vivaserver/Mustang2'
 Bundle 'vim-ruby/vim-ruby'
-Bundle 'w0ng/vim-hybrid'
 Bundle 'edkolev/tmuxline.vim'
+" colorschemes
+Bundle 'baskerville/bubblegum'
+Bundle 'NLKNguyen/papercolor-theme'
+Bundle 'romainl/Apprentice'
+Bundle 'vivaserver/Mustang2'
+Bundle 'w0ng/vim-hybrid'
+Bundle 'wolf-dog/nighted.vim'
 
 " bind NERDTreeToggle to Ctrl-n
 map <silent> <C-n> :NERDTreeToggle<CR>
