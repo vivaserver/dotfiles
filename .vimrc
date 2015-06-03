@@ -80,8 +80,11 @@ autocmd FileType php noremap <C-M> <Esc>:w!<CR>:!php %<CR>
 " Leader key is '\' by default, but ',' is easier to type
 let mapleader=","
 " make spacebar insert a single character
-nmap <Space> i <Esc>r
+" nmap <Space> i <Esc>r
+nmap <Space> :
+
 nmap <C-W>t <Esc>:tabnew<CR>
+
 " Press i to enter insert mode, and ii to exit
 " (http://vim.wikia.com/wiki/Avoid_the_escape_key)
 :imap ii <Esc>
