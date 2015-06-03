@@ -34,7 +34,7 @@ Plug 'vim-scripts/kolor'
 Plug 'vim-scripts/MatchTag'
 Plug 'vim-scripts/RelativeNumberCurrentWindow'
 Plug 'vim-scripts/The-NERD-tree'
-Plug 'vim-scripts/underwater-mod'
+" Plug 'vim-scripts/underwater-mod' " only works on GVim
 Plug 'w0ng/vim-hybrid'
 call plug#end()
 
