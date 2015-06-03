@@ -2,8 +2,9 @@ set nocompatible
 
 filetype off
 
-" deployed to VM boxes more than to desktops/laptops, so enable Vundles explicity
-" source ~/.vimrc_vundle
+" deployed to VM boxes more than to desktops/laptops, so enable Vundles/Plugins explicity
+" source ~/dotfiles/.vimrc_vundle
+" source ~/dotfiles/.vimrc_plug
 
 filetype plugin indent on
 
