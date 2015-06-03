@@ -1,14 +1,8 @@
 set nocompatible
 
 filetype off
-
-" deployed to VM boxes more than to desktops/laptops, so enable Vundles/Plugins explicity
-" source ~/dotfiles/.vimrc_vundle
-" source ~/dotfiles/.vimrc_plug
-
 filetype plugin indent on
 
-" set number
 set relativenumber
 set cursorline
 set termencoding=utf-8
@@ -78,10 +72,9 @@ autocmd FileType php noremap <C-L> <Esc>:w!<CR>:!php -l %<CR>
 " run file with PHP CLI (CTRL-M)
 autocmd FileType php noremap <C-M> <Esc>:w!<CR>:!php %<CR>
 
-" Leader key is '\' by default, but ',' is easier to type
-let mapleader=","
-" make spacebar insert a single character
-" nmap <Space> i <Esc>r
+let mapleader="º"
+
+" nmap <Space> i <Esc>r  " make spacebar insert a single character
 nmap <Space> :
 
 nmap <C-W>t <Esc>:tabnew<CR>
@@ -141,3 +134,7 @@ au BufRead,BufNewFile *.scss set filetype=scss
 au BufRead,BufNewFile *.vhost setfiletype apache
 au BufRead,BufNewFile Gemfile set filetype=ruby
 au BufRead,BufNewFile Vagrantfile set filetype=ruby
+
+" enable Vundles/Plugins explicity where supported
+" source ~/dotfiles/.vimrc_vundle
+" source ~/dotfiles/.vimrc_plug
