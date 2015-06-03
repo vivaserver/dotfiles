@@ -1,0 +1,57 @@
+" install vim-plug:
+" $ curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+" ...
+" :PlugInstall
+
+call plug#begin('~/.vim/plugged')
+" Plug 'tpope/vim-sensible'
+Plug 'edkolev/tmuxline.vim'
+Plug 'kien/ctrlp.vim', { 'on': 'CtrlP' }
+Plug 'bling/vim-bufferline'
+Plug 'vim-scripts/CursorLineCurrentWindow'
+Plug 'vim-scripts/Distinguished'
+Plug 'vim-scripts/hickop'
+Plug 'vim-scripts/holokai'
+Plug 'vim-scripts/Iceberg'
+Plug 'vim-scripts/Lucius'
+Plug 'vim-scripts/jellybeans.vim'
+Plug 'vim-scripts/kolor'
+Plug 'vim-scripts/MatchTag'
+Plug 'vim-scripts/RelativeNumberCurrentWindow'
+Plug 'vim-scripts/The-NERD-tree'
+Plug 'vim-scripts/underwater-mod'
+Plug 'Lokaltog/vim-powerline'
+Plug 'lunaru/vim-less', { 'for': 'less' }
+Plug 'NLKNguyen/papercolor-theme'
+Plug 'romainl/Apprentice'
+Plug 'scrooloose/syntastic', { 'on': 'SyntasticToggleMode' }
+Plug 'slim-template/vim-slim'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-haml', { 'for': 'scss' }
+Plug 'vivaserver/Mustang2'
+Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
+Plug 'w0ng/vim-hybrid'
+Plug 'wolf-dog/nighted.vim'
+call plug#end()
+
+" bind NERDTreeToggle to ,,
+map <Leader>n :NERDTreeToggle<CR>
+
+" Excluding version control directories
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
+let g:ctrlp_custom_ignore = 'vendor/ruby'
+" Ctrl-P’s file search combined with buffer search is magnificent
+" http://statico.github.com/vim.html
+nmap <Leader>b :CtrlPBuffer<CR>
+
+" awesome statusbar mod Powerline
+" http://github.com/Lokaltog/vim-powerline/
+set laststatus=2 " Always show the statusline
+" let g:Powerline_symbols='unicode'
+let g:Powerline_symbols='compatible'
+"
+" patched font thanks to https://gist.github.com/toupeira/1630581
+" set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
+" let Powerline_symbols = 'fancy'
+
+let g:tmuxline_powerline_separators = 0
