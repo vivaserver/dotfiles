@@ -9,7 +9,8 @@ Plug 'baskerville/bubblegum'
 Plug 'bling/vim-bufferline'
 Plug 'edkolev/tmuxline.vim'
 Plug 'kien/ctrlp.vim', { 'on': 'CtrlP' }
-Plug 'Lokaltog/vim-powerline'
+" Plug 'Lokaltog/vim-powerline'
+Plug 'itchyny/lightline.vim'
 Plug 'lunaru/vim-less', { 'for': 'less' }
 Plug 'morhetz/gruvbox'
 Plug 'NLKNguyen/papercolor-theme'
@@ -49,8 +50,9 @@ let g:ctrlp_custom_ignore = 'vendor/ruby'
 nmap <Leader>b :CtrlPBuffer<CR>
 
 " awesome statusbar mod Powerline
-set laststatus=2 " Always show the statusline
 " let g:Powerline_symbols='unicode'
-let g:Powerline_symbols='compatible'
+" let g:Powerline_symbols='compatible'
+set laststatus=2 " Always show the statusline
+let g:lightline = { 'subseparator': {'left':'','right':''} }
 
 let g:tmuxline_powerline_separators = 0
