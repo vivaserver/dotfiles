@@ -39,13 +39,13 @@ Plug 'vim-scripts/The-NERD-tree'
 Plug 'w0ng/vim-hybrid'
 call plug#end()
 
-" bind NERDTreeToggle to ,,
 map <Leader>n :NERDTreeToggle<CR>
 
 " Excluding version control directories
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
 let g:ctrlp_custom_ignore = 'vendor/ruby'
 " Ctrl-P’s file search combined with buffer search is magnificent
+map <Leader>p :CtrlP<CR>
 " http://statico.github.com/vim.html
 nmap <Leader>b :CtrlPBuffer<CR>
 
