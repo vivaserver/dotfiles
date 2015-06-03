@@ -6,9 +6,21 @@
 call plug#begin('~/.vim/plugged')
 " Plug 'tpope/vim-sensible'
 Plug 'baskerville/bubblegum'
+Plug 'bling/vim-bufferline'
 Plug 'edkolev/tmuxline.vim'
 Plug 'kien/ctrlp.vim', { 'on': 'CtrlP' }
-Plug 'bling/vim-bufferline'
+Plug 'Lokaltog/vim-powerline'
+Plug 'lunaru/vim-less', { 'for': 'less' }
+Plug 'morhetz/gruvbox'
+Plug 'NLKNguyen/papercolor-theme'
+Plug 'romainl/Apprentice'
+Plug 'scrooloose/syntastic', { 'on': 'SyntasticToggleMode' }
+Plug 'slim-template/vim-slim', { 'for': 'slim' }
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-haml', { 'for': 'scss' }
+Plug 'tpope/vim-endwise'
+Plug 'vivaserver/Mustang2'
+Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
 Plug 'vim-scripts/Auto-Pairs'
 Plug 'vim-scripts/CursorLineCurrentWindow'
 Plug 'vim-scripts/Distinguished'
@@ -23,19 +35,7 @@ Plug 'vim-scripts/MatchTag'
 Plug 'vim-scripts/RelativeNumberCurrentWindow'
 Plug 'vim-scripts/The-NERD-tree'
 Plug 'vim-scripts/underwater-mod'
-Plug 'Lokaltog/vim-powerline'
-Plug 'lunaru/vim-less', { 'for': 'less' }
-Plug 'NLKNguyen/papercolor-theme'
-Plug 'romainl/Apprentice'
-Plug 'scrooloose/syntastic', { 'on': 'SyntasticToggleMode' }
-Plug 'slim-template/vim-slim', { 'for': 'slim' }
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-haml', { 'for': 'scss' }
-Plug 'tpope/vim-endwise'
-Plug 'vivaserver/Mustang2'
-Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
 Plug 'w0ng/vim-hybrid'
-Plug 'wolf-dog/nighted.vim'
 call plug#end()
 
 " bind NERDTreeToggle to ,,
