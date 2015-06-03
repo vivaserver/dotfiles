@@ -89,6 +89,9 @@ nmap <C-W>t <Esc>:tabnew<CR>
 " (http://vim.wikia.com/wiki/Avoid_the_escape_key)
 :imap ii <Esc>
 
+" open new split panes to right
+set splitright
+
 if has("gui_running")
   set columns=195
   set guioptions-=T
