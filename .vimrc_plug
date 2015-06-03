@@ -49,13 +49,8 @@ let g:ctrlp_custom_ignore = 'vendor/ruby'
 nmap <Leader>b :CtrlPBuffer<CR>
 
 " awesome statusbar mod Powerline
-" http://github.com/Lokaltog/vim-powerline/
 set laststatus=2 " Always show the statusline
 " let g:Powerline_symbols='unicode'
 let g:Powerline_symbols='compatible'
-"
-" patched font thanks to https://gist.github.com/toupeira/1630581
-" set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
-" let Powerline_symbols = 'fancy'
 
 let g:tmuxline_powerline_separators = 0
