@@ -68,9 +68,15 @@ command B b
 command Bd bd
 
 " PHP parser check (CTRL-L)
-autocmd FileType php noremap <C-L> <Esc>:w!<CR>:!php -l %<CR>
+" autocmd FileType php noremap <C-L> <Esc>:w!<CR>:!php -l %<CR>
 " run file with PHP CLI (CTRL-M)
-autocmd FileType php noremap <C-M> <Esc>:w!<CR>:!php %<CR>
+" autocmd FileType php noremap <C-M> <Esc>:w!<CR>:!php %<CR>
+
+" Easier window navigation
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
 
 let mapleader="º"
 
