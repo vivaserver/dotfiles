@@ -40,6 +40,8 @@ Plug 'w0ng/vim-hybrid'
 call plug#end()
 
 map <Leader>n :NERDTreeToggle<CR>
+" find currently opened file
+map <Leader>f :NERDTreeFind<CR>
 
 " Excluding version control directories
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
