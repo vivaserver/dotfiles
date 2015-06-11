@@ -9,7 +9,6 @@ Plug 'baskerville/bubblegum'
 Plug 'bling/vim-bufferline'
 Plug 'edkolev/tmuxline.vim'
 Plug 'kien/ctrlp.vim', { 'on': 'CtrlP' }
-" Plug 'Lokaltog/vim-powerline'
 Plug 'itchyny/lightline.vim'
 Plug 'lunaru/vim-less', { 'for': 'less' }
 Plug 'morhetz/gruvbox'
@@ -45,15 +44,13 @@ map <Leader>f :NERDTreeFind<CR>
 
 " Excluding version control directories
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
+
 let g:ctrlp_custom_ignore = 'vendor/ruby'
 " Ctrl-P’s file search combined with buffer search is magnificent
 map <Leader>p :CtrlP<CR>
 " http://statico.github.com/vim.html
 nmap <Leader>b :CtrlPBuffer<CR>
 
-" awesome statusbar mod Powerline
-" let g:Powerline_symbols='unicode'
-" let g:Powerline_symbols='compatible'
 set laststatus=2 " Always show the statusline
 let g:lightline = { 'subseparator': {'left':'','right':''} }
 
