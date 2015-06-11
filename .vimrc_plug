@@ -9,6 +9,7 @@ Plug 'baskerville/bubblegum'
 Plug 'bling/vim-bufferline'
 Plug 'edkolev/tmuxline.vim'
 Plug 'kien/ctrlp.vim', { 'on': 'CtrlP' }
+Plug 'kien/rainbow_parentheses.vim', { 'for': 'javascript'  }
 Plug 'itchyny/lightline.vim'
 Plug 'lunaru/vim-less', { 'for': 'less' }
 Plug 'morhetz/gruvbox'
@@ -42,16 +43,21 @@ map <Leader>n :NERDTreeToggle<CR>
 " find currently opened file
 map <Leader>f :NERDTreeFind<CR>
 
-" Excluding version control directories
-set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
-
 let g:ctrlp_custom_ignore = 'vendor/ruby'
 " Ctrl-P’s file search combined with buffer search is magnificent
 map <Leader>p :CtrlP<CR>
 " http://statico.github.com/vim.html
 nmap <Leader>b :CtrlPBuffer<CR>
 
+autocmd Syntax javascript RainbowParenthesesToggle
+autocmd Syntax javascript RainbowParenthesesLoadBraces
+autocmd Syntax javascript RainbowParenthesesLoadRound
+autocmd Syntax javascript RainbowParenthesesLoadSquare
+
+let g:tmuxline_powerline_separators = 0
+
 set laststatus=2 " Always show the statusline
 let g:lightline = { 'subseparator': {'left':'','right':''} }
 
-let g:tmuxline_powerline_separators = 0
+" Excluding version control directories
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
