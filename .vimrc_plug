@@ -9,7 +9,7 @@ Plug 'baskerville/bubblegum'
 Plug 'bling/vim-bufferline'
 Plug 'edkolev/tmuxline.vim'
 Plug 'kien/ctrlp.vim', { 'on': 'CtrlP' }
-Plug 'kien/rainbow_parentheses.vim', { 'for': 'javascript'  }
+Plug 'kien/rainbow_parentheses.vim', { 'for': ['javascript','less','scss']  }
 Plug 'itchyny/lightline.vim'
 Plug 'lunaru/vim-less', { 'for': 'less' }
 Plug 'morhetz/gruvbox'
@@ -49,6 +49,10 @@ map <Leader>p :CtrlP<CR>
 " http://statico.github.com/vim.html
 nmap <Leader>b :CtrlPBuffer<CR>
 
+autocmd Syntax *ss RainbowParenthesesToggle
+autocmd Syntax *ss RainbowParenthesesLoadBraces
+autocmd Syntax *ss RainbowParenthesesLoadRound
+autocmd Syntax *ss RainbowParenthesesLoadSquare
 autocmd Syntax javascript RainbowParenthesesToggle
 autocmd Syntax javascript RainbowParenthesesLoadBraces
 autocmd Syntax javascript RainbowParenthesesLoadRound
