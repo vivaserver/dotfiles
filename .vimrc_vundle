@@ -40,8 +40,9 @@ Bundle 'vivaserver/Mustang2'
 Bundle 'w0ng/vim-hybrid'
 Bundle 'wolf-dog/nighted.vim'
 
-" bind NERDTreeToggle to Ctrl-n
-map <silent> <C-n> :NERDTreeToggle<CR>
+map <Leader>n :NERDTreeToggle<CR>
+" find currently opened file
+map <Leader>f :NERDTreeFind<CR>
 
 " Excluding version control directories
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
