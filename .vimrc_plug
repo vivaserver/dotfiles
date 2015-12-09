@@ -10,7 +10,7 @@ Plug 'bling/vim-bufferline'
 Plug 'edkolev/tmuxline.vim'
 Plug 'kien/ctrlp.vim', { 'on': 'CtrlP' }
 Plug 'kien/rainbow_parentheses.vim', { 'for': ['javascript','less','css','scss']  }
-Plug 'itchyny/lightline.vim'
+Plug 'Lokaltog/vim-powerline'
 Plug 'lunaru/vim-less', { 'for': 'less' }
 Plug 'morhetz/gruvbox'
 Plug 'NLKNguyen/papercolor-theme'
@@ -43,25 +43,25 @@ map <Leader>n :NERDTreeToggle<CR>
 " find currently opened file
 map <Leader>f :NERDTreeFind<CR>
 
+" Excluding version control directories
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
 let g:ctrlp_custom_ignore = 'vendor/ruby'
 " Ctrl-P’s file search combined with buffer search is magnificent
 map <Leader>p :CtrlP<CR>
 " http://statico.github.com/vim.html
 nmap <Leader>b :CtrlPBuffer<CR>
 
-autocmd Syntax *ss RainbowParenthesesToggle
-autocmd Syntax *ss RainbowParenthesesLoadBraces
-autocmd Syntax *ss RainbowParenthesesLoadRound
-autocmd Syntax *ss RainbowParenthesesLoadSquare
+autocmd Syntax *ss        RainbowParenthesesToggle
+autocmd Syntax *ss        RainbowParenthesesLoadBraces
+autocmd Syntax *ss        RainbowParenthesesLoadRound
+autocmd Syntax *ss        RainbowParenthesesLoadSquare
 autocmd Syntax javascript RainbowParenthesesToggle
 autocmd Syntax javascript RainbowParenthesesLoadBraces
 autocmd Syntax javascript RainbowParenthesesLoadRound
 autocmd Syntax javascript RainbowParenthesesLoadSquare
 
-let g:tmuxline_powerline_separators = 0
-
+" let g:Powerline_symbols='unicode'
+let g:Powerline_symbols='compatible'
 set laststatus=2 " Always show the statusline
-let g:lightline = { 'subseparator': {'left':'','right':''} }
 
-" Excluding version control directories
-set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
+let g:tmuxline_powerline_separators = 0
