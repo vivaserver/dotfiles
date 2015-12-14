@@ -28,6 +28,8 @@ alias rackup="bundle exec rackup"
 alias rspec="bundle exec rspec"
 alias padrino="bundle exec padrino"
 
+alias pbcopy="xclip -sel clip < "
+
 # syntax: search $what $where
 search_on() {
   find $2 -name .git -prune -o -type f -exec grep -Inr "$1" {} + 
