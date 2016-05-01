@@ -40,6 +40,8 @@ set wrapmargin=0
 " related to above?
 set backspace=eol,start,indent
 set whichwrap+=<,>,h,l
+" Change signs for end of line, trailing whitespaces and tabs
+set listchars=tab:▸\ ,eol:¬,trail:\·
 
 " code folding, unfinished
 set foldmethod=indent
