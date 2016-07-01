@@ -4,64 +4,65 @@
 " :PlugInstall
 
 call plug#begin('~/.vim/plugged')
+
 " Plug 'tpope/vim-sensible'
-Plug 'baskerville/bubblegum'
 Plug 'bling/vim-bufferline'
-Plug 'edkolev/tmuxline.vim'
-Plug 'kien/ctrlp.vim', { 'on': 'CtrlP' }
-Plug 'kien/rainbow_parentheses.vim', { 'for': ['javascript','less','css','scss']  }
-Plug 'Lokaltog/vim-powerline'
-Plug 'lunaru/vim-less', { 'for': 'less' }
-Plug 'morhetz/gruvbox'
-Plug 'NLKNguyen/papercolor-theme'
-Plug 'romainl/Apprentice'
 Plug 'scrooloose/syntastic', { 'on': 'SyntasticToggleMode' }
 Plug 'slim-template/vim-slim', { 'for': ['jade','slim'] }
 Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-haml', { 'for': 'scss' }
-Plug 'tpope/vim-endwise'
-Plug 'vivaserver/Mustang2'
-Plug 'vim-ruby/vim-ruby', { 'for': 'ruby' }
-Plug 'vim-scripts/Auto-Pairs'
+Plug 'tpope/vim-endwise'      " wisely add 'end' in ruby
+Plug 'vim-scripts/Auto-Pairs' " insert or delete brackets, parens, quotes in pair
+Plug 'vim-scripts/MatchTag'   " match HTML tag
 Plug 'vim-scripts/CursorLineCurrentWindow'
-Plug 'vim-scripts/Distinguished'
-Plug 'vim-scripts/hemisu.vim', { 'for': 'javascript' }
-Plug 'vim-scripts/hickop'
-Plug 'vim-scripts/holokai'
-Plug 'vim-scripts/Iceberg'
-Plug 'vim-scripts/Lucius'
-Plug 'vim-scripts/jellybeans.vim', { 'for': 'php' }
-Plug 'vim-scripts/kolor', { 'for': 'ruby' }
-Plug 'vim-scripts/MatchTag'
 Plug 'vim-scripts/RelativeNumberCurrentWindow'
-Plug 'vim-scripts/The-NERD-tree'
-" Plug 'vim-scripts/underwater-mod' " only works on GVim
-Plug 'w0ng/vim-hybrid'
-call plug#end()
 
+Plug 'vim-scripts/The-NERD-tree'
 map <Leader>n :NERDTreeToggle<CR>
 " find currently opened file
 map <Leader>f :NERDTreeFind<CR>
 
+" Plug 'kien/ctrlp.vim', { 'on': 'CtrlP' }
 " Excluding version control directories
-set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
-let g:ctrlp_custom_ignore = 'vendor/ruby'
+" set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
+" let g:ctrlp_custom_ignore = 'vendor/ruby'
 " Ctrl-P’s file search combined with buffer search is magnificent
-map <Leader>p :CtrlP<CR>
+" map <Leader>p :CtrlP<CR>
 " http://statico.github.com/vim.html
-nmap <Leader>b :CtrlPBuffer<CR>
+" nmap <Leader>b :CtrlPBuffer<CR>
 
-autocmd Syntax *ss        RainbowParenthesesToggle
-autocmd Syntax *ss        RainbowParenthesesLoadBraces
-autocmd Syntax *ss        RainbowParenthesesLoadRound
-autocmd Syntax *ss        RainbowParenthesesLoadSquare
-autocmd Syntax javascript RainbowParenthesesToggle
-autocmd Syntax javascript RainbowParenthesesLoadBraces
-autocmd Syntax javascript RainbowParenthesesLoadRound
-autocmd Syntax javascript RainbowParenthesesLoadSquare
+" Plug 'kien/rainbow_parentheses.vim', { 'for': ['javascript','less','css','scss']  }
+" autocmd Syntax *ss        RainbowParenthesesToggle
+" autocmd Syntax *ss        RainbowParenthesesLoadBraces
+" autocmd Syntax *ss        RainbowParenthesesLoadRound
+" autocmd Syntax *ss        RainbowParenthesesLoadSquare
+" autocmd Syntax javascript RainbowParenthesesToggle
+" autocmd Syntax javascript RainbowParenthesesLoadBraces
+" autocmd Syntax javascript RainbowParenthesesLoadRound
+" autocmd Syntax javascript RainbowParenthesesLoadSquare
 
+Plug 'Lokaltog/vim-powerline', { 'branch': 'develop' }
 " let g:Powerline_symbols='unicode'
 let g:Powerline_symbols='compatible'
 set laststatus=2 " Always show the statusline
 
+Plug 'edkolev/tmuxline.vim'
 let g:tmuxline_powerline_separators = 0
+
+" colorschemes
+" Plug 'baskerville/bubblegum'
+" Plug 'morhetz/gruvbox'
+" Plug 'owickstrom/vim-colors-paramount'
+Plug 'NLKNguyen/papercolor-theme'
+" Plug 'romainl/Apprentice'
+" Plug 'vim-scripts/Distinguished'
+" Plug 'vim-scripts/jellybeans.vim', { 'for': 'php' }
+" Plug 'vim-scripts/kolor', { 'for': 'ruby' }
+" Plug 'vim-scripts/Lucius'
+" Plug 'vim-scripts/hemisu.vim'
+" Plug 'vim-scripts/hickop'
+" Plug 'vim-scripts/holokai'
+" Plug 'vim-scripts/underwater-mod' " only works on GVim
+" Plug 'vivaserver/Mustang2'
+" Plug 'w0ng/vim-hybrid'
+
+call plug#end()
