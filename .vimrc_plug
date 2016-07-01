@@ -10,9 +10,9 @@ Plug 'bling/vim-bufferline'
 Plug 'scrooloose/syntastic', { 'on': 'SyntasticToggleMode' }
 Plug 'slim-template/vim-slim', { 'for': ['jade','slim'] }
 Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-endwise'      " wisely add 'end' in ruby
+Plug 'tpope/vim-endwise', { 'for': 'ruby' }
 Plug 'vim-scripts/Auto-Pairs' " insert or delete brackets, parens, quotes in pair
-Plug 'vim-scripts/MatchTag'   " match HTML tag
+Plug 'vim-scripts/MatchTag', { 'for': ['html','php'] }
 Plug 'vim-scripts/CursorLineCurrentWindow'
 Plug 'vim-scripts/RelativeNumberCurrentWindow'
 
