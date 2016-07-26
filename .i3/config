@@ -10,6 +10,7 @@ new_float 1pixel
 hide_edge_borders both
 
 exec dropbox start
+# $ sudo apt install -y gnome-control-center
 exec gnome-settings-daemon
 exec setxkbmap -option "ctrl:swapcaps"
 exec feh --bg-fill ~/.i3/DeathStar.png
