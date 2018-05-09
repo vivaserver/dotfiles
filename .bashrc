@@ -151,3 +151,7 @@ export TERM="xterm-256color"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+# The terminal's flow control commands may interfere with Ctrl-S and Ctrl-Q
+# ref. https://stackoverflow.com/a/13648667
+# stty start undef stop undef
