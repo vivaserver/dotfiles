@@ -143,8 +143,6 @@ export PS1="\w
 
 # no cow love? ref. https://ansibleworks.zendesk.com/entries/26206167-How-do-I-disable-cowsay-
 # export ANSIBLE_NOCOWS=1
-# ref. http://fabiorehm.com/blog/2013/11/12/set-the-default-vagrant-provider-from-your-vagrantfile/
-export VAGRANT_DEFAULT_PROVIDER=lxc
 export EDITOR=/usr/bin/vim
 export XZ_OPT=-9
 
