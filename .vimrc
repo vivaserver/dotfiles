@@ -45,8 +45,8 @@ set listchars=tab:▸\ ,eol:¬,trail:\·
 
 " code folding, unfinished
 set foldmethod=indent
-set nofoldenable
-set foldlevel=1
+" set nofoldenable
+" set foldlevel=1
 
 " remove empty lines at end of file
 " %s/\($\n\s*\)\+\%$//e
@@ -80,10 +80,11 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-let mapleader="º"
+let mapleader="|"
+let maplocalleader=","
 
 " nmap <Space> i <Esc>r  " make spacebar insert a single character
-nmap <Space> :
+nmap <CR> :
 
 nmap <C-W>t <Esc>:tabnew<CR>
 
@@ -137,11 +138,12 @@ set secure
 " NerdTree-like filelist style for netrw
 let g:netrw_liststyle=3
 
-au BufRead,BufNewFile *.ru setfiletype ruby
-au BufRead,BufNewFile *.scss set filetype=scss
-au BufRead,BufNewFile *.vhost setfiletype apache
 au BufRead,BufNewFile Gemfile set filetype=ruby
-au BufRead,BufNewFile Vagrantfile set filetype=ruby
+au BufRead,BufNewFile *.ru setfiletype ruby
+au BufRead,BufNewFile *.jade set filetype=slim
+au BufRead,BufNewFile *.pug set filetype=slim
+au BufRead,BufNewFile *.scss set filetype=scss
+au BufRead,BufNewFile *.tag set filetype=javascript
 
 " enable Vundles/Plugins explicity where supported
 " source ~/dotfiles/.vimrc_vundle
