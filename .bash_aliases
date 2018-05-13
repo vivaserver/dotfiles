@@ -6,7 +6,7 @@ alias lh='ls -lh --group-directories-first'
 alias lf="ls -lp | grep '/'"
 alias ..='cd ..;'
 
-alias annex="git annex"
+alias tx="tmuxstart"
 
 # no need for 'tmux -2' anymore, 'cause .vimrc BCE fix
 # alias tmux="tmux -2"

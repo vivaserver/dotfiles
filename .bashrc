@@ -37,7 +37,7 @@ fi
 
 # set a fancy prompt (non-color, unless we know we "want" color)
 case "$TERM" in
-    xterm-color) color_prompt=yes;;
+    xterm-color|*-256color) color_prompt=yes;;
 esac
 
 # uncomment for a colored prompt, if the terminal has the capability; turned
@@ -84,6 +84,9 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
+# colored GCC warnings and errors
+#export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+
 # some more ls aliases
 alias ll='ls -alF'
 alias la='ls -A'
@@ -102,6 +105,9 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+export PS1="\$(__git_ps1 \"%s ± \")\w
+ \h $ "
+
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
@@ -112,34 +118,6 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-
-
-# choose RVM **or** RBENV prompt support
-#
-# [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-# PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-# # https://gist.github.com/4376766
-# export PS1="\$(__git_ps1 \"%s ± \")\$(~/.rvm/bin/rvm-prompt) \w
-#  ⚡ "
-#
-# https://gist.github.com/kyanny/1668822
-# export PATH="$HOME/.rbenv/bin:$PATH"
-# eval "$(rbenv init -)"
-# source ~/.rbenv/completions/rbenv.bash
-# __rbenv_ps1 ()
-# {
-#   rbenv_ruby_version=`rbenv version | sed -e 's/ .*//'`
-#   printf $rbenv_ruby_version
-# }
-# export PS1="\$(__git_ps1 \"%s ± \")\$(__rbenv_ps1) \w
-#  ⚡ "
-
-# neither RVM **nor** RBENV support, but keep Git in prompt
-# export PS1="\$(__git_ps1 \"%s ± \")\w
-#  \h ⚡ "
-
-export PS1="\w
- \h ⚡ "
 
 # no cow love? ref. https://ansibleworks.zendesk.com/entries/26206167-How-do-I-disable-cowsay-
 # export ANSIBLE_NOCOWS=1
