@@ -49,7 +49,7 @@ let g:CommandTWildIgnore=&wildignore . ',*/node_modules/*'
 set laststatus=2 " Always show the statusline
 let g:airline_left_sep=''
 let g:airline_right_sep=''
-let g:airline_theme='ravenpower'
+let g:airline_theme='raven'
 " vim-powerline deprecated, not maintained any longer:
 "   Plug 'Lokaltog/vim-powerline', { 'branch': 'develop' }
 "   let g:Powerline_symbols='unicode'
