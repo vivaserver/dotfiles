@@ -19,8 +19,9 @@ Plug 'vim-scripts/The-NERD-tree'
 map <Leader>n :NERDTreeToggle<CR>
 map <Leader>f :NERDTreeFind<CR>  " find currently opened file
 
-Plug 'edkolev/tmuxline.vim'
-let g:tmuxline_powerline_separators = 0
+" use tmuxline to generate a tmux.theme on-the-fly; also exports it to file
+" Plug 'edkolev/tmuxline.vim'
+" let g:tmuxline_powerline_separators = 0
 
 " install vim-command-t package via Ansible playbook
 let g:CommandTFileScanner='find'
