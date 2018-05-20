@@ -10,6 +10,8 @@ alias tx="tmuxstart"
 
 # no need for 'tmux -2' anymore, 'cause .vimrc BCE fix
 # alias tmux="tmux -2"
+# force UTF-8 support
+alias tmux="tmux -u"
 
 alias youtube-mp3="youtube-dl -t --extract-audio --audio-format mp3 --audio-quality 128k"
 alias youtube-240p="youtube-dl -f 5"
