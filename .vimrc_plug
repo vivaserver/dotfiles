@@ -64,7 +64,7 @@ let g:airline_theme='raven'
 " Plug 'NLKNguyen/papercolor-theme'
 " Plug 'romainl/Apprentice'
 " Plug 'vim-scripts/Distinguished'
-" Plug 'vim-scripts/jellybeans.vim', { 'for': 'php' }
+" Plug 'dikiaap/minimalist'
 " Plug 'vim-scripts/kolor', { 'for': 'ruby' }
 " Plug 'vim-scripts/Lucius'
 " Plug 'vim-scripts/hemisu.vim'
