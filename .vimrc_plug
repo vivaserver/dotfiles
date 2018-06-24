@@ -59,6 +59,7 @@ let g:airline_theme='qwq'  " powerlineish; ravenpower
 
 " take your pick of colorschemes:
 " Plug 'baskerville/bubblegum'
+" Plug 'fcpg/vim-fahrenheit'
 " Plug 'morhetz/gruvbox'
 " Plug 'owickstrom/vim-colors-paramount'
 " Plug 'NLKNguyen/papercolor-theme'
