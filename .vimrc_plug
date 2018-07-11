@@ -52,10 +52,6 @@ set laststatus=2 " Always show the statusline
 let g:airline_left_sep=''
 let g:airline_right_sep=''
 let g:airline_theme='qwq'  " powerlineish; ravenpower
-" vim-powerline deprecated, not maintained any longer:
-"   Plug 'Lokaltog/vim-powerline', { 'branch': 'develop' }
-"   let g:Powerline_symbols='unicode'
-"   let g:Powerline_symbols='compatible'
 
 " take your pick of colorschemes:
 " Plug 'baskerville/bubblegum'
