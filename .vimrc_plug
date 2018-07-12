@@ -55,11 +55,11 @@ let g:airline_theme='qwq'  " powerlineish; ravenpower
 
 " take your pick of colorschemes:
 " Plug 'baskerville/bubblegum'
-" Plug 'fcpg/vim-fahrenheit'
 " Plug 'morhetz/gruvbox'
 " Plug 'owickstrom/vim-colors-paramount'
 " Plug 'NLKNguyen/papercolor-theme'
 " Plug 'romainl/Apprentice'
+" Plug 'fenetikm/falcon'
 " Plug 'fcpg/vim-fahrenheit'
 " Plug 'fcpg/vim-farout'
 " Plug 'dikiaap/minimalist'
@@ -69,7 +69,6 @@ let g:airline_theme='qwq'  " powerlineish; ravenpower
 " Plug 'vim-scripts/hickop'
 " Plug 'vim-scripts/holokai'
 " Plug 'vim-scripts/underwater-mod' " only works on GVim
-" Plug 'vivaserver/Mustang2'
 " Plug 'w0ng/vim-hybrid'
 
 call plug#end()
