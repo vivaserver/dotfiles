@@ -62,6 +62,7 @@ let g:airline_theme='qwq'  " powerlineish; ravenpower
 " Plug 'fenetikm/falcon'
 " Plug 'fcpg/vim-fahrenheit'
 " Plug 'fcpg/vim-farout'
+" Plug 'fcpg/vim-orbital'
 " Plug 'dikiaap/minimalist'
 " Plug 'vim-scripts/kolor', { 'for': 'ruby' }
 " Plug 'vim-scripts/Lucius'
