@@ -147,5 +147,4 @@ au BufRead,BufNewFile *.scss set filetype=scss
 au BufRead,BufNewFile *.tag set filetype=javascript
 
 " enable Vundles/Plugins explicity where supported
-" source ~/dotfiles/.vimrc_vundle
 " source ~/dotfiles/.vimrc_plug
