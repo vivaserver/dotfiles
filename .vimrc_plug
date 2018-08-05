@@ -71,6 +71,7 @@ let g:airline_theme='qwq'  " powerlineish; ravenpower
 " Plug 'vim-scripts/hickop'
 " Plug 'vim-scripts/holokai'
 " Plug 'vim-scripts/underwater-mod' " only works on GVim
+" Plug 'whatyouhide/vim-gotham'
 " Plug 'w0ng/vim-hybrid'
 
 call plug#end()
