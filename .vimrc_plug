@@ -54,6 +54,7 @@ let g:airline_right_sep=''
 let g:airline_theme='qwq'  " powerlineish; ravenpower
 
 " take your pick of colorschemes:
+" Plug 'ajmwagar/vim-deus'
 " Plug 'baskerville/bubblegum'
 " Plug 'morhetz/gruvbox'
 " Plug 'owickstrom/vim-colors-paramount'
