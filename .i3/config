@@ -61,7 +61,7 @@ bindsym $mod+Shift+I exec google-chrome --incognito
 bindsym $mod+Shift+Q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run -b -fn '-*-terminus-medium-r-*-*-*-120-75-75-*-*-iso8859-15'
+bindsym $mod+d exec dmenu_run -b -fn 'Terminus:size=8'
 
 # change focus
 bindsym $mod+h focus left
