@@ -43,7 +43,6 @@ floating_modifier $mod
 # see full charset using `xfd -fa terminus`
 # get font strings using `xfontsel`
 # font for window titles. ISO 10646 = Unicode
-# font -misc-fixed-medium-r-normal--13-120-75-75-C-70-iso10646-1
 # font -*-terminus-medium-r-*-*-*-120-75-75-*-*-iso8859-15
 font pango:Terminus 12px
 # font -*-ohsnap-medium-*-*-*-12-*-*-*-*-*-*-*
@@ -202,7 +201,8 @@ bar {
   font pango:Terminus 12px
   # http://askubuntu.com/questions/135437/install-artwiz-fonts-in-ubuntu-12-04
   # font pango: Ohsnap 8px
-  status_command i3status
+  status_command i3blocks -c ~/.i3/i3blocks.conf
+  # status_command i3status
   position top
   # mode hide
   colors {
