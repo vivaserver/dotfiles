@@ -16,11 +16,8 @@ exec setxkbmap -option "ctrl:swapcaps"
 exec feh --bg-scale ~/.i3/DeathStar.png
 # urxvt in daemon/client mode
 exec --no-startup-id urxvtd -q -f -o
-# apt-get install kupfer
-# exec kupfer
 
 for_window [class="feh"] floating enable
-# for_window [class="^Firefox"] floating enable
 for_window [class="^GIMP"] floating enable
 for_window [class="MPlayer"] floating enable
 for_window [class="Remmina"] floating enable
@@ -40,6 +37,8 @@ for_window [class="Update"] floating enable
 # Please see http://i3wm.org/docs/userguide.html for a complete reference!
 
 set $mod Mod4
+# Use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod
 
 # see full charset using `xfd -fa terminus`
 # get font strings using `xfontsel`
@@ -48,9 +47,6 @@ set $mod Mod4
 font -*-terminus-medium-r-*-*-*-120-75-75-*-*-iso8859-15
 # font -*-ohsnap-medium-*-*-*-12-*-*-*-*-*-*-*
 # font pango:Terminus 8px
-
-# Use Mouse+$mod to drag floating windows to their wanted position
-floating_modifier $mod
 
 # start a terminal
 #  lxterminal Background color #00141A
