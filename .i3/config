@@ -9,13 +9,13 @@ new_window none
 new_float 1pixel
 hide_edge_borders both
 
-exec dropbox start
 # $ sudo apt install -y gnome-control-center
 exec gnome-settings-daemon
 exec setxkbmap -option "ctrl:swapcaps"
 exec feh --bg-scale ~/.i3/DeathStar.png
 # urxvt in daemon/client mode
 exec --no-startup-id urxvtd -q -f -o
+# exec dropbox start
 
 for_window [class="feh"] floating enable
 for_window [class="^GIMP"] floating enable
