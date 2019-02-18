@@ -3,16 +3,17 @@
 
 call plug#begin('~/.vim/plugged')
 
-" Plug 'tpope/vim-sensible'
-" Plug 'junegunn/goyo.vim' " distraction-free writing
 " Plug 'bling/vim-bufferline'
+" Plug 'junegunn/goyo.vim' " distraction-free writing
+" Plug 'tpope/vim-sensible'
 " Plug 'ryanoasis/vim-devicons'
 " Plug 'scrooloose/syntastic', { 'on': 'SyntasticToggleMode' }
-Plug 'slim-template/vim-slim', { 'for': ['jade','pug','slim'] }
+" Plug 'vim-scripts/MatchTag', { 'for': ['html','php'] }
+Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-endwise', { 'for': 'ruby' }
+Plug 'sheerun/vim-polyglot'
 Plug 'vim-scripts/Auto-Pairs' " insert or delete brackets, parens, quotes in pair
-" Plug 'vim-scripts/MatchTag', { 'for': ['html','php'] }
 Plug 'vim-scripts/CursorLineCurrentWindow'
 Plug 'vim-scripts/RelativeNumberCurrentWindow'
 
@@ -54,24 +55,31 @@ let g:airline_right_sep=''
 let g:airline_theme='qwq'  " powerlineish; ravenpower
 
 " take your pick of colorschemes:
-" Plug 'ajmwagar/vim-deus'
 " Plug 'baskerville/bubblegum'
-" Plug 'morhetz/gruvbox'
 " Plug 'owickstrom/vim-colors-paramount'
-" Plug 'NLKNguyen/papercolor-theme'
 " Plug 'romainl/Apprentice'
-" Plug 'fenetikm/falcon'
-" Plug 'fcpg/vim-fahrenheit'
-" Plug 'fcpg/vim-farout'
-" Plug 'fcpg/vim-orbital'
-" Plug 'dikiaap/minimalist'
 " Plug 'vim-scripts/kolor', { 'for': 'ruby' }
-" Plug 'vim-scripts/Lucius'
 " Plug 'vim-scripts/hemisu.vim'
 " Plug 'vim-scripts/hickop'
 " Plug 'vim-scripts/holokai'
-" Plug 'vim-scripts/underwater-mod' " only works on GVim
-" Plug 'whatyouhide/vim-gotham'
 " Plug 'w0ng/vim-hybrid'
+
+" great 256-support/tmux themes
+Plug 'dikiaap/minimalist'
+Plug 'fenetikm/falcon'
+Plug 'fcpg/vim-fahrenheit'
+Plug 'fcpg/vim-farout'
+Plug 'fcpg/vim-orbital'
+Plug 'NLKNguyen/papercolor-theme'
+Plug 'vim-scripts/Lucius'
+Plug 'whatyouhide/vim-gotham'
+
+" need :termguicolors for maximum effect; but also lx-terminal
+Plug 'ajmwagar/vim-deus'
+Plug 'arcticicestudio/nord-vim'
+Plug 'KeitaNakamura/neodark.vim'
+Plug 'mhartington/oceanic-next'
+Plug 'tyrannicaltoucan/vim-quantum'
+Plug 'vim-scripts/underwater-mod' " gr8 on GVim
 
 call plug#end()
