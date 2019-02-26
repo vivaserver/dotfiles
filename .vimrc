@@ -1,6 +1,5 @@
 set nocompatible
 
-filetype off
 filetype plugin indent on
 
 set relativenumber
@@ -75,10 +74,10 @@ command Bd bd
 " autocmd FileType php noremap <C-M> <Esc>:w!<CR>:!php %<CR>
 
 " Easier window navigation
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
+nnoremap <silent> <C-h> <C-w>h
+nnoremap <silent> <C-j> <C-w>j
+nnoremap <silent> <C-k> <C-w>k
+nnoremap <silent> <C-l> <C-w>l
 
 let mapleader="|"
 let maplocalleader=","
@@ -116,12 +115,16 @@ if has("gui_running")
     set lines=72
   end
 else
-  set t_Co=256
+  if v:version >= 80
+    " set termguicolors
+  else
+    " disable Background Color Erase (BCE) to fix Vim background on 256-color Tmux
+    " ref: http://snk.tuxfamily.org/log/vim-256color-bce.html
+    set t_Co=256
+    set t_ut=
+  endif
   set background=dark
   color desert
-  " disable Background Color Erase (BCE) to fix Vim background on 256-color Tmux
-  " ref: http://snk.tuxfamily.org/log/vim-256color-bce.html
-  set t_ut=
 endif
 
 " alternate relativenumber mode
@@ -139,12 +142,9 @@ set secure
 " NerdTree-like filelist style for netrw
 let g:netrw_liststyle=3
 
+" rest of filetypes support by vim-polygot plugin
 au BufRead,BufNewFile Gemfile set filetype=ruby
 au BufRead,BufNewFile *.ru setfiletype ruby
-au BufRead,BufNewFile *.jade set filetype=slim
-au BufRead,BufNewFile *.pug set filetype=slim
-au BufRead,BufNewFile *.scss set filetype=scss
-au BufRead,BufNewFile *.tag set filetype=javascript
 
 " enable Vundles/Plugins explicity where supported
 " source ~/dotfiles/.vimrc_plug
