@@ -8,6 +8,7 @@ call plug#begin('~/.vim/plugged')
 " Plug 'tpope/vim-sensible'
 " Plug 'ryanoasis/vim-devicons'
 " Plug 'scrooloose/syntastic', { 'on': 'SyntasticToggleMode' }
+" Plug 'vim-airline/vim-airline' " in case vim-airline package not avail.
 " Plug 'vim-scripts/MatchTag', { 'for': ['html','php'] }
 Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
@@ -52,7 +53,7 @@ let g:CommandTWildIgnore=&wildignore . ',*/node_modules/*'
 set laststatus=2 " Always show the statusline
 let g:airline_left_sep=''
 let g:airline_right_sep=''
-let g:airline_theme='qwq'  " powerlineish; ravenpower
+let g:airline_theme='dark'  " on vim-airline-themes package: qwq; powerlineish; ravenpower
 
 " take your pick of colorschemes:
 " Plug 'baskerville/bubblegum'
