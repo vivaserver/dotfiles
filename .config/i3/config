@@ -12,7 +12,7 @@ hide_edge_borders both
 # $ sudo apt install -y gnome-control-center
 exec gnome-settings-daemon
 exec setxkbmap -option "ctrl:swapcaps"
-exec feh --bg-scale ~/.i3/DeathStar.png
+exec feh --bg-scale ~/.config/i3/DeathStar.png
 # urxvt in daemon/client mode
 exec --no-startup-id urxvtd -q -f -o
 # exec dropbox start
@@ -201,7 +201,7 @@ bar {
   font pango:Terminus 12px
   # http://askubuntu.com/questions/135437/install-artwiz-fonts-in-ubuntu-12-04
   # font pango: Ohsnap 8px
-  status_command i3blocks -c ~/.i3/i3blocks.conf
+  status_command i3blocks -c ~/.config/i3/i3blocks.conf
   # status_command i3status
   position top
   # mode hide
