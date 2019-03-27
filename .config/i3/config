@@ -217,4 +217,8 @@ bar {
   }
 }
 
+# try i3-gaps ppa! ref. https://launchpad.net/~kgilmer/+archive/ubuntu/regolith
+# gaps inner 10
+# gaps outer 0
+
 # vim: notermguicolors nofoldenable
