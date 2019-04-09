@@ -30,7 +30,7 @@ alias rackup="bundle exec rackup"
 alias rspec="bundle exec rspec"
 alias padrino="bundle exec padrino"
 
-alias elm='docker run -ti -v $(pwd):/opt/app/ -p 8000:8000 wunsh/alpine-elm:latest'
+alias elm='docker run --rm -ti -v $(pwd):/opt/app/ -p 8000:8000 wunsh/alpine-elm:latest'
 
 alias pbcopy="xclip -sel clip < "
 
