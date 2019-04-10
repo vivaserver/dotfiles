@@ -1,10 +1,11 @@
 URxvt*.transparent: true
-URxvt*.shading: 80
+URxvt*.shading: 25
 URxvt*.fading: 40
 URxvt.font: -*-terminus-medium-r-*-*-*-120-75-75-*-*-iso8859-15
 # disable bold fonts by just applying the same font string:
 # URxvt.font: xft:terminus12
 # URxvt.boldFont: xft:terminus12
 URxvt.foreground: #aaaaaa
-URxvt.saveLines: 0
+URxvt.internalBorder: 7
+URxvt.saveLines: 1000
 URxvt.scrollBar: false
