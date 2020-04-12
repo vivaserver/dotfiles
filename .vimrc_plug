@@ -29,11 +29,12 @@ map <Leader>f :NERDTreeFind<CR>  " find currently opened file
 " install vim-command-t package via Ansible playbook
 let g:CommandTFileScanner='find'
 let g:CommandTWildIgnore=&wildignore . ',*/node_modules/*'
-map <Leader>t :CommandTJump<CR>
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
+map <Leader>t :CommandT<CR>
+map <Leader>b :CommandTBuffer<CR>
 " CommandT is already packaged and available on main repo. So deprecate:
 "   Plug 'kien/ctrlp.vim', { 'on': 'CtrlP' }
 "   Excluding version control directories
-"   set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
 "   let g:ctrlp_custom_ignore = 'vendor/ruby'
 "   Ctrl-P’s file search combined with buffer search is magnificent
 "   map <Leader>p :CtrlP<CR>
