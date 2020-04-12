@@ -11,6 +11,8 @@ call plug#begin('~/.vim/plugged')
 " Plug 'vim-airline/vim-airline' " in case vim-airline package not avail.
 " Plug 'vim-scripts/MatchTag', { 'for': ['html','php'] }
 Plug 'airblade/vim-gitgutter'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() }  }
+Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-endwise', { 'for': 'ruby' }
 Plug 'sheerun/vim-polyglot'
@@ -26,12 +28,19 @@ map <Leader>f :NERDTreeFind<CR>  " find currently opened file
 " Plug 'edkolev/tmuxline.vim'
 " let g:tmuxline_powerline_separators = 0
 
+map <Leader>b :Buffers<CR>
+map <Leader>c :Colors<CR>
+map <Leader>h :History<CR>
+map <Leader>H :History/<CR>
+map <Leader>l :BLines<CR>
+map <Leader>t :GFiles<CR>
+map <Leader>T :Files!<CR>
+map <Leader>` :Marks<CR>
 " install vim-command-t package via Ansible playbook
-let g:CommandTFileScanner='find'
-let g:CommandTWildIgnore=&wildignore . ',*/node_modules/*'
-set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
-map <Leader>t :CommandT<CR>
-map <Leader>b :CommandTBuffer<CR>
+" let g:CommandTFileScanner='find'
+" let g:CommandTWildIgnore=&wildignore . ',*/node_modules/*'
+" map <Leader>t :CommandT<CR>
+" map <Leader>b :CommandTBuffer<CR>
 " CommandT is already packaged and available on main repo. So deprecate:
 "   Plug 'kien/ctrlp.vim', { 'on': 'CtrlP' }
 "   Excluding version control directories
@@ -40,6 +49,7 @@ map <Leader>b :CommandTBuffer<CR>
 "   map <Leader>p :CtrlP<CR>
 "   http://statico.github.com/vim.html
 "   nmap <Leader>b :CtrlPBuffer<CR>
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
 
 " Plug 'kien/rainbow_parentheses.vim', { 'for': ['javascript','less','css','scss']  }
 " autocmd Syntax *ss        RainbowParenthesesToggle
